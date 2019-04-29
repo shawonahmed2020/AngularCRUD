@@ -1,3 +1,8 @@
-<h1>
-  Welcome {{name}}
-</h1>
+<div>
+  <input class="col-sm-6" bind-disabled="isDisabled" type="text" value="Shawon">
+</div>
+<h1 [class]="successClass">Shawon Ahmed</h1>
+<h1 [class.text-danger]="hasError">I love you</h1>
+  <button type="button" class="btn btn-danger" (click)="onClick()">Submit</button>
+  {{greeting}}
+
